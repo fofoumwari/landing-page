@@ -1,21 +1,20 @@
 // src/components/Benefits.jsx
 import React from 'react';
+import { Layers } from 'lucide-react';
 
 const leftColumn = [
   {
     title: "Creative Space",
     description: "we offer a welcoming and reliable space for all with friendly staff",
-    logo: "https://img.icons8.com/ios-filled/50/000000/idea.png"
+    
   },
   {
     title: "High Speed Wifi",
     description: "free high-speed Wi-Fi and plenty of charging outlets. ",
-    logo: "https://img.icons8.com/ios-filled/50/000000/wifi.png"
   },
   {
     title: "Parking Area",
     description: "we offer a secure on-site parking area.",
-    logo: "https://img.icons8.com/ios-filled/50/000000/parking.png"
   },
 ];
 
@@ -23,17 +22,14 @@ const rightColumn = [
   {
     title: "24/7 Access",
     description: "Open 24/7 to Serve You Better.",
-    logo: "https://img.icons8.com/ios-filled/50/000000/clock.png"
   },
   {
     title: "Great Location",
     description: "Come for the coffee. Stay for the vibe. Return for the convenience.",
-    logo: "https://img.icons8.com/ios-filled/50/000000/marker.png"
   },
   {
     title: "Outdoor Space",
     description: "Come in. Stay connected. Stay as long as you like we’re always open.",
-    logo: "https://img.icons8.com/ios-filled/50/000000/garden.png"
   },
 ];
 
@@ -53,7 +49,7 @@ const Benefits = () => {
             {leftColumn.map((item, index) => (
               <div key={index} className="border border-gray-200 rounded-lg p-6 shadow hover:shadow-md h-full bg-primaryColor-50/10">
                 <div className="flex justify-center mb-4">
-                  <img src={item.logo} alt={`${item.title} icon`} className="w-10 h-10 bg-primaryColor-50" />
+                  <div className='bg-primaryColor-50'><Layers size={45}  /></div>
                 </div>
                 <h3 className="text-xl font-semibold text-black mb-2">{item.title}</h3>
                 <p className="text-gray-600">{item.description}</p>
@@ -64,7 +60,7 @@ const Benefits = () => {
           {/* Center Column - Full Image filling height */}
           <div className="flex items-stretch">
             <img
-              src="https://tse4.mm.bing.net/th/id/OIP.NZ_CJzHc1yggxbQuTXoJIgHaEC?pid=Api&P=0&h=220"
+              src="https://tse3.mm.bing.net/th/id/OIP.MAAtdg6Rm6Bdxo4TYhoPhgHaEo?pid=Api&P=0&h=220"
               alt="Workspace"
               className="rounded-lg shadow-md object-cover w-full"
             />
@@ -75,7 +71,7 @@ const Benefits = () => {
             {rightColumn.map((item, index) => (
               <div key={index} className="border border-gray-200 rounded-lg p-6 shadow hover:shadow-md h-full bg-primaryColor-50/10">
                 <div className="flex justify-center mb-4">
-                  <img src={item.logo} alt={`${item.title} icon`} className="w-10 h-10 bg-primaryColor-50" />
+                  <div className='bg-primaryColor-50'><Layers size={45}  /></div>
                 </div>
                 <h3 className="text-xl font-semibold text-black mb-2">{item.title}</h3>
                 <p className="text-gray-600">{item.description}</p>

@@ -1,5 +1,6 @@
 // src/components/Contact.jsx
 import React, { useState } from 'react';
+import { MapPin, Mail ,PhoneCall} from 'lucide-react';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -50,9 +51,24 @@ const Contact = () => {
           {/* Contact Info */}
           <div>
             <h3 className="text-xl font-semibold text-blue-700 mb-4">Say Hello</h3>
-            <p className="mb-2"><strong>Address:</strong> Location KG 9 Ave, Kigali</p>
-            <p className="mb-2"><strong>Email:</strong> <a href="mailto:businesscafe@info.com" className="text-blue-600 hover:underline">businesscafe@info.com</a></p>
-            <p className="mb-4"><strong>Phone:</strong> +250788183828</p>
+           
+           
+
+             <div className='text-[color:var(--primary-600)] text-lg'><MapPin size={32} color="#00816e" /></div>
+             <div>
+              <h3 className="font-bold text-black">Address</h3>
+              <p className="text-gray-600">Location KG 9 Ave, Kigali</p>
+            </div>
+            <div className='text-[color:var(--primary-600)] text-lg'><Mail size={32} color="#00816e" /></div>
+             <div>
+              <h3 className="font-bold text-black">Email</h3>
+              <p className="text-gray-600">businesscafe@info.com</p>
+            </div>
+           <div className='text-[color:var(--primary-600)] text-lg'><PhoneCall size={32} color="#00816e" />
+             <h3 className="font-bold text-black">Phone</h3>
+              <p className="text-gray-600">+250788183828</p>
+            </div>
+
             <a
               href="https://www.google.com/maps/d/viewer?hl=en&ie=UTF8&oe=UTF8&msa=0&mid=1o2cUkUb6MuCeiDOQKlo65xgwxAE&ll=-2.037623841691473%2C30.094707000000014&z=12"
               target="_blank"
@@ -125,7 +141,7 @@ const Contact = () => {
               {errors.message && <p className="text-red-500 text-sm mt-1">{errors.message}</p>}
             </div>
 
-            <button type="submit" className="bg-blue-600 text-white py-2 px-6 rounded-lg hover:bg-blue-700">
+            <button type="submit" className="bg-primaryColor-50 text-white py-2 px-6 rounded-lg hover:bg-blue-700">
               Send Message
             </button>
           </form>

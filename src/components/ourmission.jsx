@@ -3,7 +3,7 @@ import React from 'react';
 const mission = () => {
   return (
     <section
-      className="relative bg-[url('https://tse2.mm.bing.net/th/id/OIP.NUlwNjPkWPWiDx6B-3ZjyQHaEu?pid=Api&P=0&h=220')] bg-cover bg-center text-black py-32 px-4"
+      className="relative bg-[url('https://tse3.mm.bing.net/th/id/OIP.MAAtdg6Rm6Bdxo4TYhoPhgHaEo?pid=Api&P=0&h=220')] bg-cover bg-center text-black py-32 px-4"
       id="missions"
     >
       {/* Overlay */}

@@ -3,7 +3,7 @@ import React from 'react';
 const Hero = () => {
   return (
     <section
-      className="relative bg-[url('https://tse1.mm.bing.net/th/id/OIP.86f1YjFRhu3BqOH8lQeRnQHaFj?pid=Api&P=0&h=220')] bg-cover bg-center text-white py-32 px-4"
+      className="relative bg-[url('https://images.freeimages.com/images/large-previews/9c2/cafe-early-morning-1253969.jpg')] bg-cover bg-center text-white py-32 px-4"
       id="home"
     >
       {/* Overlay */}
