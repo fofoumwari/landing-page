@@ -5,6 +5,8 @@ import React from 'react';
 const Footer = () => {
   return (
     <footer className="bg-white text-black py-12 px-4">
+      <div className="flex flex-col sm:flex-row items-center justify-between gap-4 maax-w-6xl mx-auto">
+
       <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-8">
         <div>
             <LayoutDashboard size={45} className="text-primaryColor-50 mb-4" />
@@ -52,6 +54,7 @@ const Footer = () => {
       {/* Bottom */}
       <div className="text-center text-sm mt-10 border-t pt-6 border-gray-700">
         Copyright © 2023 Business Cafe. All rights reserved.
+      </div>
       </div>
     </footer>
   );

@@ -36,12 +36,14 @@ const rightColumn = [
 const Benefits = () => {
   return (
     <section className="id='space'py-16 bg-white px-4">
-      <div className="max-w-7xl mx-auto text-center ">
-        <h4><span className="text-primaryColor-50">your Benefits</span></h4>
-        <h3 className="text-3xl font-bold text-gray-800 mb-6">Why Choose Us</h3>
-        <p className="text-gray-600 text-lg mb-12">
+      
+      <div className="text-center px-4">
+        <h1 className="text-primaryColor-50 text-md">Your Benefits</h1>
+        <h2 className="font-bold text-3xl py-3">Why Choose Us</h2>
+        <p className="pb-8 max-w-2xl mx-auto">
           Unleash your productivity with our premium workspace solutions. Elevate your work game and join the winning team today.
         </p>
+      </div>
 
         <div className="grid grid-cols-3 md:grid-cols-3 gap-6 items-stretch">
           {/* Left Column */}
@@ -79,9 +81,13 @@ const Benefits = () => {
             ))}
           </div>
         </div>
-      </div>
+     
+      
     </section>
+    
   );
 };
 
 export default Benefits;
+
+

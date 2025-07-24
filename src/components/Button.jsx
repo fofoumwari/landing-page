@@ -1,31 +1,32 @@
+// src/components/Boutons.jsx
 import React from 'react';
 
-const About = () => {
+const Boutons = () => {
   return (
-    <section id="about" className="bg-gray-50 py-16 px-4">
-      
-        <h2 className="text-3xl font-bold text-primaryColor-50">About Us</h2>
-      
-      <div className="max-w-6xl mx-auto grid grid-cols-3 gap-4 items-center text-center">
-        {/* Column 1: Heading */}
-        <h3 className="text-1xl font-bold text-gray-800">
-          We offer creative working environments that suit your business.
-        </h3>
+    <section id="about" className="py-16 bg-white px-4">
+      <div className="max-w-6xl mx-auto ">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
+          {/* Left: Heading */}
+          <div className="flex flex-col justify-center border-r border-gray-300 pr-6 ">
+           <h1 className="text-4xl font-bold text-primaryColor-50 mb-4">About Us</h1>
+            <h3 className="text-3xl font-semibold text-gray-800">
+              We offer creative working environments that suit your business.
+            </h3>
+          </div>
 
-        {/* Column 2: Vertical Line */}
-        <div className="flex justify-center">
-          <div className="h-90 w-px bg-blue-400"></div>
+          {/* Right: Paragraph */}
+          <div className="pl-6">
+            
+            <p className="text-gray-700 text-lg leading-relaxed">
+              Lorem ipsum dolor sit amet consectetur adipiscing elit torquent,
+              conubia leo rutrum praesent dui turpis lobortis, vulputate pellentesque
+              tristique primis cum tincidunt placerat maecenas, velit metus fermentum eget.
+            </p>
+          </div>
         </div>
-
-        {/* Column 3: Paragraph */}
-        <p className="text-gray-700 text-1xl leading-relaxed justify-normal">
-        our cafe is more than just a place to grab a coffee.
-        it's a community space designed to bring people together
-        over fresh food, rich aromas, and meaningful connections.
-        </p>
       </div>
     </section>
   );
 };
 
-export default About;
+export default Boutons;

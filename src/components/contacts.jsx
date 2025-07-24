@@ -1,6 +1,5 @@
 // src/components/Contact.jsx
 import React, { useState } from 'react';
-import { MapPin, Mail, PhoneCall } from 'lucide-react';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -43,41 +42,29 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="bg-gray-100 py-16 px-4">
-      <div className="max-w-6xl mx-auto">
-        <h2 className="text-3xl font-bold  text-primaryColor-50 mb-10">Contact Us</h2>
+    <section id="contact" className="max-w-7xl mx-auto px-6 py-16 grid grid-cols-1 lg:grid-cols-2 gap-12 items-start relative">
+      <div className="absolute inset-0 opacity-10 pointer-events-none">
+         <img
+          src="https://cdn.vectorstock.com/i/500p/86/48/world-map-on-transparent-background-vector-44408648.jpg"
+          alt="World map background"
+          className="w-full h-full object-cover"
+        /></div>
+        <h2 className="text-3xl font-bold text-center text-gray-800 mb-10">Contact Us</h2>
 
         <div className="grid md:grid-cols-2 gap-8">
           {/* Contact Info */}
-          <h3 className="text-xl font-bold text-black mb-6">Say Hello</h3>
-          <div className="w-20 h-20 rounded-full border border-dashed border-primaryColor-50 flex items-center justify-center text-primaryColor-50 hover:bg-primary-100">
-    <MapPin className="w-10 h-10" />
-  </div>
-            <div>
-              <h3 className="font-bold text-black">Address</h3>
-              <p className="text-gray-600">Location KG 12 Ave, Kigali</p>
-            </div>
-            <div className="w-20 h-20 rounded-full border border-dashed border-primaryColor-50 flex items-center justify-center text-primaryColor-50 hover:bg-primary-100">
-    <Mail className="w-10 h-10" />
-  </div>
-            <div>
-              <h3 className="font-bold text-black">Email</h3>
-              <p className="text-gray-600">businesscafe@info.com</p>
-            </div>
-            <div className="w-20 h-20 rounded-full border border-dashed border-primaryColor-50 flex items-center justify-center text-primaryColor-50 hover:bg-primary-100">
-    <PhoneCall className="w-10 h-10" />
-  </div>
-            <div>
-              <h3 className="font-bold text-black">Phone</h3>
-              <p className="text-gray-600">+250788183828</p>
-            </div>
-          </div>
+          <div>
+            <h3 className="text-xl font-semibold text-blue-700 mb-4">Say Hello</h3>
+            <p className="mb-2"><strong>Address:</strong> Location KG 9 Ave, Kigali</p>
+            <p className="mb-2"><strong>Email:</strong> <a href="mailto:businesscafe@info.com" className="text-blue-600 hover:underline">businesscafe@info.com</a></p>
+            <p className="mb-4"><strong>Phone:</strong> +250788183828</p>
+           
+          </div>
 
           {/* Contact Form */}
-         
+          <h3 className='text-primaryColor-50 font-semibold'>Have a Question?</h3>
+          <h1 className='text-2xl font-bold text-black'>Send Message</h1>
           <form onSubmit={handleSubmit} className="bg-white shadow-md rounded-lg p-6 space-y-4">
-             <h3 className="text-xl font-semibold text-primaryColor-50 mb-4">Have a Question?</h3>
-             <h2 className='text-2xl font-bold text-gray-800 mb-4'>Send a message</h2>
             <div>
               <input
                 type="text"
@@ -138,12 +125,12 @@ const Contact = () => {
               {errors.message && <p className="text-red-500 text-sm mt-1">{errors.message}</p>}
             </div>
 
-            <button type="submit" className="bg-primaryColor-50 text-white py-2 px-6 rounded-lg hover:bg-primaryColor-50">
+            <button type="submit" className="bg-primaryColor-50 text-white py-2 px-6 rounded-lg">
               Send Message
             </button>
           </form>
         </div>
-
+     
     </section>
   );
 };
