@@ -54,20 +54,27 @@ const Contact = () => {
            
            
 
-             <div className='text-[color:var(--primary-600)] text-lg'><MapPin size={32} color="#00816e" /></div>
-             <div>
+             <div className='text-primaryColor-50 w-15 h-15 rounded-full  border-dotted border-3 border-primaryColor-50 flex items-center justify-center text-lg'><MapPin size={32} color="#00816e" /></div>
               <h3 className="font-bold text-black">Address</h3>
               <p className="text-gray-600">Location KG 9 Ave, Kigali</p>
-            </div>
-            <div className='text-[color:var(--primary-600)] text-lg'><Mail size={32} color="#00816e" /></div>
+            <div></div>
+
+            <div className=' text-primaryColor-50 w-15 h-15 rounded-full  border-dotted border-3 border-primaryColor-50 flex items-center justify-center text-lg'><Mail size={32} color="#00816e" /></div>
              <div>
               <h3 className="font-bold text-black">Email</h3>
               <p className="text-gray-600">businesscafe@info.com</p>
             </div>
-           <div className='text-[color:var(--primary-600)] text-lg'><PhoneCall size={32} color="#00816e" />
+            <div></div>
+            <div className=' text-primaryColor-50 w-15 h-15 rounded-full  border-dotted border-3 border-primaryColor-50 flex items-center justify-center text-lg '>
+                <div>
+                <PhoneCall size={32} color="#255" />
+                </div>
+                </div>
+            
+            
              <h3 className="font-bold text-black">Phone</h3>
               <p className="text-gray-600">+250788183828</p>
-            </div>
+            
 
             <a
               href="https://www.google.com/maps/d/viewer?hl=en&ie=UTF8&oe=UTF8&msa=0&mid=1o2cUkUb6MuCeiDOQKlo65xgwxAE&ll=-2.037623841691473%2C30.094707000000014&z=12"

@@ -1,16 +1,32 @@
 // src/components/Footer.jsx
+import {Facebook, LayoutDashboard, Twitter,Linkedin,Instagram} from 'lucide-react';
 import React from 'react';
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-800 text-white py-12 px-4">
+    <footer className="bg-white text-black py-12 px-4">
       <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-8">
-        {/* Business Description */}
         <div>
+            <LayoutDashboard size={45} className="text-primaryColor-50 mb-4" />
           <h3 className="text-xl font-semibold mb-4">Business Cafe</h3>
           <p className="text-sm leading-relaxed">
             Discover your ideal workspace with us. Work smart, not hard in our fully-equipped office spaces. Elevate your business with flexible solutions tailored to your needs.
           </p>
+        <div className='p-4'></div>
+          <div className='flex gap-4'>
+          <div className="w-10 h-10 rounded-full border border-primary-500 flex items-center justify-center text-primaryColor-50 hover:bg-primary-100 transition">
+            <Twitter  className='w-20 h-5'/>
+             </div>
+             <div className="w-10 h-10 rounded-full border border-primary-500 flex items-center justify-center text-primaryColor-50 hover:bg-primary-100 transition">
+             <Facebook className='w-20h-5'/>
+             </div>
+             <div className="w-10 h-10 rounded-full border border-primary-500 flex items-center justify-center text-primaryColor-50 hover:bg-primary-100 transition">
+            <Linkedin className='w-5 h-5'/>
+            </div>
+            <div className="w-10 h-10 rounded-full border border-primary-500 flex items-center justify-center text-primaryColor-50 hover:bg-primary-100 transition">
+            <Instagram className='w-5 h-5'/>
+            </div>
+          </div>
         </div>
 
         {/* Quick Links */}
