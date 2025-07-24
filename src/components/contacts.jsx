@@ -1,5 +1,7 @@
 // src/components/Contact.jsx
 import React, { useState } from 'react';
+import { MapPin , Mail, PhoneCall} from 'lucide-react';
+import { MdLocationOn } from 'react-icons/md';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -49,21 +51,50 @@ const Contact = () => {
           alt="World map background"
           className="w-full h-full object-cover"
         /></div>
-        <h2 className="text-3xl font-bold text-center text-gray-800 mb-10">Contact Us</h2>
+        <div className="z-10 space-y-10">
+        <h2 className="text-primaryColor-50 font-semibold">Contact Us</h2>
+        <h1 className="text-4xl font-bold">Say Hello</h1>
 
-        <div className="grid md:grid-cols-2 gap-8">
-          {/* Contact Info */}
-          <div>
-            <h3 className="text-xl font-semibold text-blue-700 mb-4">Say Hello</h3>
-            <p className="mb-2"><strong>Address:</strong> Location KG 9 Ave, Kigali</p>
-            <p className="mb-2"><strong>Email:</strong> <a href="mailto:businesscafe@info.com" className="text-blue-600 hover:underline">businesscafe@info.com</a></p>
-            <p className="mb-4"><strong>Phone:</strong> +250788183828</p>
-           
+        <div className="flex items-center gap-4">
+          <div className="text-primaryColor-50 py-1 px-1 border-2 border-dotted border-primaryColor-50 rounded-full inline-flex">
+            <div className="bg-primaryColor-50 text-white p-2 rounded-full flex items-center justify-center">
+              <MdLocationOn size={24} />
+            </div>
           </div>
+          <div>
+            <h3 className="font-semibold">Address</h3>
+            <p>Location KG 9 Ave, Kigali</p>
+          </div>
+        </div>
 
+        <div className="flex items-center gap-4">
+          <div className='text-primaryColor-50 py-1 px-1 border-2 border-dotted border-primaryColor-50 rounded-full inline-flex'>
+            <div className="bg-primaryColor-50 text-white p-2 rounded-full flex items-center justify-center">
+              <Mail size={30} />
+            </div>
+          </div>
+          <div>
+            <h3 className="font-semibold">Email</h3>
+            <p className="text-gray-600 underline">businesscafe@info.com</p>
+          </div>
+        </div>
+
+        <div className="flex items-center gap-4">
+          <div className='text-primaryColor-50 py-1 px-1 border-2 border-dotted border-primaryColor-50 rounded-full inline-flex'>
+            <div className="bg-primaryColor-50 text-white p-2 rounded-full flex items-center justify-center">
+              <PhoneCall size={30} />
+            </div>
+          </div>
+          <div>
+            <h3 className="font-semibold">Phone</h3>
+            <p>+250788183828</p>
+          </div>
+        </div>
+      </div>
           {/* Contact Form */}
-          <h3 className='text-primaryColor-50 font-semibold'>Have a Question?</h3>
-          <h1 className='text-2xl font-bold text-black'>Send Message</h1>
+          <div className="z-10">
+        <h2 className="text-primaryColor-50 font-semibold">Have Question ?</h2>
+        <h1 className="text-4xl font-bold pb-6">Send a Message</h1>
           <form onSubmit={handleSubmit} className="bg-white shadow-md rounded-lg p-6 space-y-4">
             <div>
               <input
