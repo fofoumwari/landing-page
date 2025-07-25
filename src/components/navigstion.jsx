@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Menu } from 'lucide-react';
-
+import { LayoutDashboard } from 'lucide-react';
 const Navbar = () => {
   const [open, setOpen] = useState(false);
 
@@ -8,7 +8,7 @@ const Navbar = () => {
     <header className="w-full bg-white shadow fixed top-0 left-0 z-50 flex-wrap">
       <div className="max-w-7xl mx-auto px-5 py-5 flex justify-between items-center">
         <div className="text-1xl font-bold text-black">
-          Business <span className="text-primaryColor-50">cafe</span>
+          <LayoutDashboard/>Business <span className="text-primaryColor-50">cafe</span>
         </div>
         {/* Desktop Nav */}
         <nav className="hidden md:flex space-x-6">

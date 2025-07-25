@@ -52,7 +52,7 @@ const Contact = () => {
           className="w-full h-full object-cover"
         /></div>
         <div className="z-10 space-y-10">
-        <h2 className="text-primaryColor-50 font-semibold">Contact Us</h2>
+        <h2 className="text-primaryColor-50 font-semibold ">Contact Us</h2>
         <h1 className="text-4xl font-bold">Say Hello</h1>
 
         <div className="flex items-center gap-4">
@@ -96,70 +96,70 @@ const Contact = () => {
         <h2 className="text-primaryColor-50 font-semibold">Have Question ?</h2>
         <h1 className="text-4xl font-bold pb-6">Send a Message</h1>
           <form onSubmit={handleSubmit} className="bg-white shadow-md rounded-lg p-6 space-y-4">
-            <div>
-              <input
-                type="text"
-                name="name"
-                placeholder="Name"
-                value={formData.name}
-                onChange={handleChange}
-                className="w-full border px-4 py-2 rounded-md"
-              />
-              {errors.name && <p className="text-red-500 text-sm mt-1">{errors.name}</p>}
-            </div>
+  <div>
+    <input
+      type="text"
+      name="name"
+      placeholder="Name"
+      value={formData.name}
+      onChange={handleChange}
+      className={`w-full border px-4 py-2 rounded-md ${errors.name ? 'border-red-500' : ''}`}
+    />
+    {errors.name && <p className="text-red-500 text-sm mt-1">{errors.name}</p>}
+  </div>
 
-            <div>
-              <input
-                type="email"
-                name="email"
-                placeholder="Email"
-                value={formData.email}
-                onChange={handleChange}
-                className="w-full border px-4 py-2 rounded-md"
-              />
-              {errors.email && <p className="text-red-500 text-sm mt-1">{errors.email}</p>}
-            </div>
+  <div>
+    <input
+      type="email"
+      name="email"
+      placeholder="Email"
+      value={formData.email}
+      onChange={handleChange}
+      className={`w-full border px-4 py-2 rounded-md ${errors.email ? 'border-red-500' : ''}`}
+    />
+    {errors.email && <p className="text-red-500 text-sm mt-1">{errors.email}</p>}
+  </div>
 
-            <div>
-              <input
-                type="text"
-                name="phone"
-                placeholder="Phone (e.g., 0788123456)"
-                value={formData.phone}
-                onChange={handleChange}
-                className="w-full border px-4 py-2 rounded-md"
-              />
-              {errors.phone && <p className="text-red-500 text-sm mt-1">{errors.phone}</p>}
-            </div>
+  <div>
+    <input
+      type="text"
+      name="phone"
+      placeholder="Phone (e.g., 0788123456)"
+      value={formData.phone}
+      onChange={handleChange}
+      className={`w-full border px-4 py-2 rounded-md ${errors.phone ? 'border-red-500' : ''}`}
+    />
+    {errors.phone && <p className="text-red-500 text-sm mt-1">{errors.phone}</p>}
+  </div>
 
-            <div>
-              <input
-                type="text"
-                name="subject"
-                placeholder="Subject"
-                value={formData.subject}
-                onChange={handleChange}
-                className="w-full border px-4 py-2 rounded-md"
-              />
-              {errors.subject && <p className="text-red-500 text-sm mt-1">{errors.subject}</p>}
-            </div>
+  <div>
+    <input
+      type="text"
+      name="subject"
+      placeholder="Subject"
+      value={formData.subject}
+      onChange={handleChange}
+      className={`w-full border px-4 py-2 rounded-md ${errors.subject ? 'border-red-500' : ''}`}
+    />
+    {errors.subject && <p className="text-red-500 text-sm mt-1">{errors.subject}</p>}
+  </div>
 
-            <div>
-              <textarea
-                name="message"
-                placeholder="Your Message"
-                rows="4"
-                value={formData.message}
-                onChange={handleChange}
-                className="w-full border px-4 py-2 rounded-md"
-              />
-              {errors.message && <p className="text-red-500 text-sm mt-1">{errors.message}</p>}
-            </div>
+  <div>
+    <textarea
+      name="message"
+      placeholder="Your Message"
+      rows="4"
+      value={formData.message}
+      onChange={handleChange}
+      className={`w-full border px-4 py-2 rounded-md ${errors.message ? 'border-red-500' : ''}`}
+    />
+    {errors.message && <p className="text-red-500 text-sm mt-1">{errors.message}</p>}
+  </div>
 
-            <button type="submit" className="bg-primaryColor-50 text-white py-2 px-6 rounded-lg">
-              Send Message
-            </button>
-          </form>
+  <button type="submit" className="bg-primaryColor-50 text-white py-2 px-6 rounded-lg">
+    Send Message
+  </button>
+</form>
         </div>
      
     </section>
